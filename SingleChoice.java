@@ -1,10 +1,9 @@
 import java.util.ArrayList;
 
-public class SingleChoice implements Question{
+public class SingleChoice implements Question {
     private String oneQuestion;
-    private ArrayList<String> oneAnswer;
     private boolean isMultipleChoice = false;
-
+    private ArrayList<String> oneAnswer;
     public SingleChoice(String question, ArrayList<String> answer) {
         this.oneQuestion = question;
         this.oneAnswer = answer;
@@ -27,7 +26,7 @@ public class SingleChoice implements Question{
     }
 
     public boolean isMultipleChoice() {
-        return isMultipleChoice();
+        return isMultipleChoice;
     }
 
 }

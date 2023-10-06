@@ -52,10 +52,12 @@ class SimulationDriver {
         for (int i = 0; i < student.length; i++) {
             int oneAnswer = (int)(Math.random() * currentAnswerList.size());
             studentAnswer.add(i, currentAnswerList.get(oneAnswer));
-            student[i].setStudentAnswer(i, currentAnswerList);
+            student[i].setStudentAnswer(i, studentAnswer);
 
         }
-        System.out.println("bye");
+        question2 = new VotingService(q2.isMultipleChoice(), studentAnswer);
+        question2.calculateScore(studentAnswer);
+        question2.printAnswer();
     }
 
     public static Student[] createStudentID(int numStudents) {
