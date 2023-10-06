@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.IllegalFormatWidthException;
 class SimulationDriver {
     private static MultipleChoice q1;
     private static SingleChoice q2;
